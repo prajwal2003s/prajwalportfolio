@@ -26,7 +26,7 @@ const Header = () => {
       {/* <div style={{position:"fixed"}} className="container"> */}
         <div className="nav-container">
           <div className="logo">
-            <a href="#home">{personaldata.header.name}</a>
+            <a href="#home">{personaldata.header.name}cxcxccc</a>
           </div>
 
           <nav className={`nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
