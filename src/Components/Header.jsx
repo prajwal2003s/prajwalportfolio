@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import "./Header.css";
-
 import personaldata from "./personal.json";
 
 const Header = () => {
@@ -23,7 +22,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`header ${isScrolled ? "scrolled" : ""}`}>
+    <header className={`fixed-header header ${isScrolled ? "scrolled" : ""}`}>
       <div className="container">
         <div className="nav-container">
           <div className="logo">
