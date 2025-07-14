@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import "./Contact.css";
 import personaldata from "./personal.json";
