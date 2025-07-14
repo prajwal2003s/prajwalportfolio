@@ -1,0 +1,175 @@
+{
+  "header": {
+    "name": "Prajwal Sathawane",
+    "navLinks": [
+      { "label": "About", "href": "#about" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Skills", "href": "#skills" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "resume": "/resume.pdf"
+  },
+
+  
+  "hero": {
+    "id": "home",
+    "name": "Prajwal Sathawane",
+    "subtitle": "Frontend Developer passionate about creating beautiful, functional, and user-centered digital experiences.",
+    "image": {
+      "src": "/Images/my-image.jpg",
+      "alt": "Prajwal Sathawane"
+    },
+    "buttons": [
+      { "label": "Get In Touch", "href": "#contact", "type": "primary" },
+      { "label": "View My Work", "href": "#projects", "type": "outline" }
+    ],
+    "social": [
+      {
+        "platform": "github",
+        "url": "https://github.com",
+        "icon": "fab fa-github",
+        "img": "/Images/git.png",
+        "alt": "GitHub"
+      },
+      {
+        "platform": "linkedin",
+        "url": "https://linkedin.com",
+        "icon": "fab fa-linkedin",
+        "img": "/Images/linked.png",
+        "alt": "Linkedin"
+      },
+      {
+        "platform": "email",
+        "url": "mailto:prajwalsathawane2003@gmail.com",
+        "icon": "fas fa-envelope",
+        "img": "/Images/mail.png",
+        "alt": "mail"
+      }
+    ]
+  },
+
+
+  "section": {
+    "id": "about",
+    "header": {
+      "title": "About Me",
+      "subtitle": "Get to know me better"
+    },
+    "image": {
+      "src": "/Images/my-image.jpg",
+      "height": "400",
+      "width": "500",
+      "alt": "About me"
+    },
+    "text": [
+      "I’m a passionate front-end developer with hands-on experience in building responsive and visually appealing web interfaces using React, CSS Grid, and JavaScript. I enjoy solving layout challenges and crafting user-friendly designs that feel intuitive and modern. My projects reflect a commitment to clean code, dynamic rendering, and aesthetic alignment—while continuously learning and improving through each build. Whether it’s refining components or exploring new UI patterns, I bring creativity and persistence to every task.",
+      "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good book. I believe in continuous learning and staying up-to-date with the latest industry trends."
+    ],
+    "contact": [
+      { "icon": "fas fa-map-marker-alt", "text": "Nagpur, India" },
+      { "icon": "fas fa-envelope", "text": "prajwalsathawane2003@gmail.com" },
+      { "icon": "fas fa-phone", "text": "+91 9284593499" }
+    ]
+  },
+  
+  "projects": {
+    "section": {
+      "id": "projects",
+      "title": "My Projects",
+      "subtitle": "Here are some of my recent works"
+    },
+    "list": [
+      {
+        "title": "User Panel Catering Service",
+        "description": "This project focuses on developing a user-friendly web panel that allows customers to explore, customize, and manage catering services online. The panel includes features like menu selection, event scheduling, pricing estimation, and feedback submission—all designed with responsive layout and intuitive UX to enhance the customer experience.",
+        "image": "/Images/roomesy.png",
+        "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+        "github": "https://github.com",
+        "live": "https://example.com"
+      },
+      {
+        "title": "Image object Recognition",
+        "description": "This project centers on building a system capable of identifying and classifying objects within images using computer vision techniques. By leveraging tools such as deep learning models (like CNNs), the system can detect items like people, vehicles, animals, and more—whether in photos, real-time video, or uploaded content. It's commonly applied in areas like security, healthcare diagnostics, autonomous vehicles, and retail analytics.",
+        "image": "/Images/objscan.png",
+        "technologies": ["React", "Socket.io", "Express", "Google APIs"],
+        "github": "https://github.com/prajwal2003s/Image_Recognition.git",
+        "live": "https://example.com"
+      }
+    ]
+  },
+
+  "skills": {
+    "section": {
+      "id": "skills",
+      "title": "Skills & Technologies",
+      "subtitle": "Technologies I work with"
+    },
+    "list": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "HTML5",
+      "CSS3",
+      "MongoDB",
+      "Git",
+      "Express.js"
+    ]
+  },
+
+  "contact": {
+    "section": {
+      "id": "contact",
+      "title": "Get In Touch",
+      "subtitle": "I'm always open to discussing new opportunities and interesting projects"
+    },
+    "card": {
+      "title": "Let's work together",
+      "message": "Feel free to reach out if you're looking for a developer, have a question, or just want to connect.",
+      "methods": [
+        {
+          "type": "email",
+          "icon": "fas fa-envelope",
+          "text": "prajwalsathawane2003@gmail.com",
+          "link": "mailto:prajwalsathawane2003@gmail.com"
+        },
+        {
+          "type": "linkedin",
+          "icon": "fab fa-linkedin",
+          "text": "LinkedIn",
+          "link": "https://linkedin.com"
+        },
+        {
+          "type": "github",
+          "icon": "fab fa-github",
+          "text": "GitHub",
+          "link": "https://github.com"
+        }
+      ]
+    }
+  },
+
+  "footer": {
+    "text": "© 2025 Prajwal Sathawane. All rights reserved.",
+    "social": [
+      {
+        "icon": "fab fa-github",
+        "img": "/Images/git.png",
+        "alt": "GitHub",
+        "link": "https://github.com"
+      },
+      {
+        "icon": "fab fa-linkedin",
+        "img": "/Images/linked.png",
+        "alt": "LinkedIn",
+        "link": "https://linkedin.com"
+      },
+      {
+        "icon": "fas fa-envelope",
+        "img": "/Images/mail.png",
+        "alt": "Email",
+        "link": "mailto:prajwalsathawane2003@gmail.com"
+      }
+    ]
+  }
+
+}
