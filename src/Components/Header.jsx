@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
-      <div style={{position:"fixed"}} className="container">
+      {/* <div style={{position:"fixed"}} className="container"> */}
         <div className="nav-container">
           <div className="logo">
             <a href="#home">{personaldata.header.name}</a>
