@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import "./Header.css";
+import "./HeaderNext.css";
 import personaldata from "./personal.json";
 
 const Header = () => {
