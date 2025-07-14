@@ -1,4 +1,4 @@
-"use client"
+
 
 import { useState, useEffect } from "react"
 import "./HeaderNext.css";
@@ -22,8 +22,8 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed-header header ${isScrolled ? "scrolled" : ""}`}>
-      <div className="container">
+    <header className={`header ${isScrolled ? "scrolled" : ""}`}>
+      <div style={{position:"fixed"}} className="container">
         <div className="nav-container">
           <div className="logo">
             <a href="#home">{personaldata.header.name}</a>
