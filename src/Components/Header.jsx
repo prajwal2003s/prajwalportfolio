@@ -1,6 +1,4 @@
-
-
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 import "./HeaderNext.css";
 import personaldata from "./personal.json";
 
@@ -23,35 +21,33 @@ const Header = () => {
 
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
-      {/* <div style={{position:"fixed"}} className="container"> */}
-        <div className="nav-container">
-          <div className="logo">
-            <a href="#home">{personaldata.header.name}cxcxccc</a>
-          </div>
+      <div className="nav-container">
+        <div className="logo">
+          <a href="#home">{personaldata.header.name}</a>
+        </div>
 
-          <nav className={`nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
-            {personaldata.header.navLinks.map(link => (
-              <a
-                href={link.href}
-                key={link.label}
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
-
-          <div className="header-actions">
-            <a href={personaldata.header.resume} className="btn btn-outline" download>
-              Download Resume
+        <nav className={`nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
+          {personaldata.header.navLinks.map(link => (
+            <a
+              href={link.href}
+              key={link.label}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {link.label}
             </a>
-          </div>
+          ))}
+        </nav>
 
-          <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+        <div className="header-actions">
+          <a href={personaldata.header.resume} className="btn btn-outline" download>
+            Download Resume
+          </a>
+        </div>
+
+        <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </header>
