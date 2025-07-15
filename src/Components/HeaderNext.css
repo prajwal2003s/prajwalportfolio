@@ -9,9 +9,7 @@
   transition: all 0.3s ease;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-body {
-  padding-top: 40px; /* header ki height ke hisab se adjust karein */
-}
+
 
 .header-fixed{
   position:fixed;
