@@ -36,15 +36,32 @@ const Header = () => {
               {link.label}
             </a>
           ))}
+          {/* 👇 Add a nav link to resume section */}
+          <a
+            href="#resume"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Resume
+          </a>
         </nav>
 
         <div className="header-actions">
+          {/* 👇 PDF Resume Download */}
           <a
-            href={personaldata.header.resume}
+            href={personaldata.resume?.pdf}
             className="btn btn-outline"
             download
           >
-            Download Resume
+            Download PDF
+          </a>
+
+          {/* 👇 DOC Resume Download */}
+          <a
+            href={personaldata.resume?.doc}
+            className="btn btn-outline"
+            download
+          >
+            Download Word
           </a>
         </div>
 

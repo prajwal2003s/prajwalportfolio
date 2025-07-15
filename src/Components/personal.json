@@ -6,11 +6,14 @@
       { "label": "Projects", "href": "#projects" },
       { "label": "Skills", "href": "#skills" },
       { "label": "Contact", "href": "#contact" }
-    ],
-    "resume": "/resume.pdf"
+    ]
+  },
+  "resume": {
+    "pdf": "/resume.pdf",
+    "doc": "/resume.docx"
   },
 
-  
+
   "hero": {
     "id": "home",
     "name": "Prajwal Sathawane",
