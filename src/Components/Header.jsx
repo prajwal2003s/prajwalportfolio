@@ -20,13 +20,13 @@ const Header = () => {
   };
 
   return (
-    <header className={`header ${isScrolled ? "scrolled" : ""}`}>
+    <header className={`header${isScrolled ? " scrolled" : ""}`}>
       <div className="nav-container">
         <div className="logo">
           <a href="#home">{personaldata.header.name}</a>
         </div>
 
-        <nav className={`nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
+        <nav className={`nav${isMobileMenuOpen ? " nav-open" : ""}`}>
           {personaldata.header.navLinks.map(link => (
             <a
               href={link.href}
@@ -39,7 +39,11 @@ const Header = () => {
         </nav>
 
         <div className="header-actions">
-          <a href={personaldata.header.resume} className="btn btn-outline" download>
+          <a
+            href={personaldata.header.resume}
+            className="btn btn-outline"
+            download
+          >
             Download Resume
           </a>
         </div>
