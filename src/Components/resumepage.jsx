@@ -1,14 +1,14 @@
 import React from "react";
 import jsPDF from "jspdf";
-import "./ResumePage.css";
+import "./ResumePage.css"; // This should be in src or same folder
 
 function ResumePage() {
-  // Option 1: Print as PDF using browser
+  // Option 1: Print using browser dialog
   const handlePrint = () => {
     window.print();
   };
 
-  // Option 2: Generate downloadable PDF using jsPDF
+  // Option 2: Generate PDF with jsPDF
   const generatePDF = () => {
     const doc = new jsPDF();
     doc.setFontSize(14);
@@ -32,7 +32,7 @@ function ResumePage() {
         </button>
       </div>
 
-      {/* Printable content */}
+      {/* Hidden content for print */}
       <div id="print-area" style={{ display: "none" }}>
         <h1>Prajwal Sathawane</h1>
         <p>Email: prajwal@example.com</p>
