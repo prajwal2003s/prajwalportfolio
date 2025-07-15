@@ -13,7 +13,7 @@ function ResumePage() {
     const doc = new jsPDF();
     doc.setFontSize(14);
     doc.text("Prajwal Sathawane", 20, 20);
-    doc.text("Email: prajwal@example.com", 20, 30);
+    doc.text("Email: prajwalsathawane2003@gmail.com", 20, 30);
     doc.text("Skills: React, Tailwind CSS, Node.js, MongoDB", 20, 40);
     doc.save("Prajwal_Resume.pdf");
   };
@@ -35,7 +35,7 @@ function ResumePage() {
       {/* Hidden content for print */}
       <div id="print-area" style={{ display: "none" }}>
         <h1>Prajwal Sathawane</h1>
-        <p>Email: prajwal@example.com</p>
+        <p>Email: prajwalsathawane2003@gmail.com</p>
         <p>Skills: React, Tailwind CSS, Node.js, MongoDB</p>
       </div>
     </section>
