@@ -3,15 +3,13 @@
   top: 0;
   left: 0;
   right: 0;
-  background: #ffffff;
+  background: #ffffff !imortant;
   backdrop-filter: blur(10px);
   z-index: 1000;
   transition: all 0.3s ease;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.header {
-  background: red !important;
-}
+
 .header-fixed{
   position:fixed;
 }
