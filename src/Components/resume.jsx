@@ -1,4 +1,4 @@
-import personaldata from "./personal.json";
+import personaldata from "../personal.json";
 
 function Resume() {
   return (

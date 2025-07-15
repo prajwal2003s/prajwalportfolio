@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // ✅ Added for navigation
 import "./HeaderNext.css";
 import personaldata from "./personal.json";
 
@@ -10,7 +11,6 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -36,17 +36,18 @@ const Header = () => {
               {link.label}
             </a>
           ))}
-          {/* 👇 Add a nav link to resume section */}
-          <a
-            href="#resume"
+
+          {/* 🧭 Resume Link now routed to /resume page */}
+          <Link
+            to="/resume"
             onClick={() => setIsMobileMenuOpen(false)}
+            className="resume-nav"
           >
             Resume
-          </a>
+          </Link>
         </nav>
 
         <div className="header-actions">
-          {/* 👇 PDF Resume Download */}
           <a
             href={personaldata.resume?.pdf}
             className="btn btn-outline"
@@ -54,8 +55,6 @@ const Header = () => {
           >
             Download PDF
           </a>
-
-          {/* 👇 DOC Resume Download */}
           <a
             href={personaldata.resume?.doc}
             className="btn btn-outline"

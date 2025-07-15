@@ -10,7 +10,16 @@
   transition: all 0.3s ease;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+.resume-nav {
+  margin-left: 15px;
+  text-decoration: none;
+  color: var(--nav-text-color);
+  font-weight: 500;
+}
 
+.resume-nav:hover {
+  color: var(--accent-color);
+}
 
 .header.scrolled {
   background: rgba(255, 255, 255, 0.28);
