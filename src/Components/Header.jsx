@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./HeaderNext.css";
 import personaldata from "./personal.json";
-
+<Link to="/resume">Resume</Link>
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
