@@ -47,7 +47,7 @@ const Header = () => {
           </Link>
         </nav>
 
-        <div className="header-actions">
+        {/* <div className="header-actions">
           <a
             href={personaldata.resume?.pdf}
             className="btn btn-outline"
@@ -62,7 +62,7 @@ const Header = () => {
           >
             Download Word
           </a>
-        </div>
+        </div> */}
 
         <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>
           <span></span>
