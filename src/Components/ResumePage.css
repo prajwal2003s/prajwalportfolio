@@ -126,6 +126,11 @@
     background: white;
   }
 
+  @page {
+  margin: 0;
+}
+
+
   .download-buttons {
     display: none;
   }

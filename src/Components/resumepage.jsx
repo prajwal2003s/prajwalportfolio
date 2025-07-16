@@ -9,7 +9,7 @@ const ResumePage = () => {
     <section className="resume-wrapper">
       <div className="download-buttons">
         <button onClick={() => window.print()} className="print-btn">🖨️ Print</button>
-        <button onClick={() => navigate("/")} className="print-btn">🔙 Back</button>
+        <button onClick={() => navigate("/")} className="print-btn">🔙 Back to Home</button>
       </div>
 
       <div id="print-area" className="resume-container">
@@ -19,11 +19,12 @@ const ResumePage = () => {
           <div className="header-details">
             <h1 className="name-heading">Prajwal Sathawane</h1>
             <h2 className="role-heading">Frontend Developer</h2>
-            <p><strong>Email:</strong> prajwalsathawane2003@gmail.com</p>
-            <p><strong>Phone:</strong> +91-9284593499</p>
+
+            <p><strong>Email:</strong> <a href="mailto:prajwalsathawane2003@gmail.com">prajwalsathawane2003@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+919284593499">+91-9284593499</a></p>
             <p><strong>Location:</strong> Nagpur, Maharashtra, India</p>
-            <p><strong>GitHub:</strong> github.com/prajwal-dev</p>
-            <p><strong>LinkedIn:</strong> linkedin.com/in/prajwal-sathawane</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/prajwal-dev" target="_blank" rel="noopener noreferrer">github.com/prajwal-dev</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/prajwal-sathawane" target="_blank" rel="noopener noreferrer">linkedin.com/in/prajwal-sathawane</a></p>
           </div>
         </div>
 
