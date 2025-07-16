@@ -29,8 +29,6 @@ function App() {
             }
           />
           <Route path="/resume" element={<ResumePage />} />
-
-          {/* 🔁 Redirect unknown routes to home */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>

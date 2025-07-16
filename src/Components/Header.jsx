@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom"; // ✅ Added for navigation
+import { Link } from "react-router-dom";
 import "./HeaderNext.css";
 import personaldata from "./personal.json";
 
@@ -19,50 +19,35 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className={`header${isScrolled ? " scrolled" : ""}`}>
       <div className="nav-container">
         <div className="logo">
-          <a href="#home">{personaldata.header.name}</a>
+          <Link to="/" onClick={closeMenu}>
+            {personaldata.header.name}
+          </Link>
         </div>
 
         <nav className={`nav${isMobileMenuOpen ? " nav-open" : ""}`}>
-          {personaldata.header.navLinks.map(link => (
+          {personaldata.header.navLinks.map((link) => (
             <a
               href={link.href}
               key={link.label}
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={closeMenu}
             >
               {link.label}
             </a>
           ))}
 
-          {/* 🧭 Resume Link now routed to /resume page */}
-          <Link
-            to="/resume"
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="resume-nav"
-          >
+          {/* ✅ Resume routed via React Router */}
+          <Link to="/resume" onClick={closeMenu} className="resume-nav">
             Resume
           </Link>
         </nav>
-
-        {/* <div className="header-actions">
-          <a
-            href={personaldata.resume?.pdf}
-            className="btn btn-outline"
-            download
-          >
-            Download PDF
-          </a>
-          <a
-            href={personaldata.resume?.doc}
-            className="btn btn-outline"
-            download
-          >
-            Download Word
-          </a>
-        </div> */}
 
         <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>
           <span></span>
