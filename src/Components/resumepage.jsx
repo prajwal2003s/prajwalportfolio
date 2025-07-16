@@ -36,7 +36,7 @@ function ResumePage() {
       <div id="print-area" style={{ display: "none" }}>
         <h1>Prajwal Sathawane</h1>
         <p>Email: prajwalsathawane2003@gmail.com</p>
-        <p>Skills: React, Tailwind CSS, Node.js, MongoDB</p>
+        <p>Skills: React, Tailwind CSS, Node.js</p>
       </div>
     </section>
   );
