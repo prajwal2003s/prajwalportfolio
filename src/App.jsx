@@ -8,7 +8,7 @@ import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import ResumePage from "./Components/ResumePage";
+import ResumePage from "./Components/Resumepage";
 import "./App.css";
 
 // ✅ Wrapper component to handle scroll based on route state
