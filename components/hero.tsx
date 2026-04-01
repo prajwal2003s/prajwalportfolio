@@ -99,22 +99,32 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right side - Profile image */}
-          <div className="relative animate-slide-right" style={{ animationDelay: '0.2s' }}>
-            <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto">
-              {/* Glowing border effect */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary via-accent to-primary opacity-30 blur-lg" />
-              
-              {/* Image container */}
-              <div className="relative rounded-2xl overflow-hidden border-2 border-primary/20 bg-card/50 backdrop-blur-sm">
-                <Image
-                  src="/profile.jpg"
-                  alt="Prajwal Sathawane"
-                  width={320}
-                  height={320}
-                  className="w-full h-full object-cover"
-                  priority
-                />
+         {/* Right side - Profile image */}
+<div
+  className="relative animate-slide-right flex justify-center md:justify-end"
+  style={{ animationDelay: '0.2s' }}
+>
+  {/* 👇 Auto height container (NO FIXED HEIGHT) */}
+  <div className="relative w-44 sm:w-56 md:w-72 mx-auto">
+
+    {/* Glow */}
+    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary via-accent to-primary opacity-30 blur-xl" />
+
+    {/* Image container */}
+    <div className="relative rounded-2xl overflow-hidden border-2 border-primary/20 bg-card/50 backdrop-blur-sm">
+
+      <Image
+        src="/profile.jpg"
+        alt="Prajwal Sathawane"
+        width={500}
+        height={700}  // 👈 important (portrait ratio)
+        className="w-full h-auto object-contain"
+        priority
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent" />
+   
                 
                 {/* Overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
